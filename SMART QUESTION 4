@@ -36,5 +36,54 @@ Same Day            9737
 3.	Printed a map ‘Shipping Mode vs Sales Benefit’
  
 
+4.	Done One way ANOVA Test
+
+F-statistic: 1.9791817108864236
+p-value: 0.11469269801389084
+
+
+5.	Correlation Coefficient
+ 
+Shipping Mode	level_1	Benefit per order
+0	First Class	Sales per customer	0.159849
+1	Same Day	Sales per customer	0.139488
+2	Second Class	Sales per customer	0.117577
+3	Standard Class	Sales per customer	0.131890
+
+
+First Class:
+The correlation coefficient between "Benefit per order" and "Sales per customer" for First Class shipping mode is 0.159849. This positive correlation indicates a moderate positive relationship between the two variables.
+
+Same Day:
+For Same Day shipping mode, the correlation coefficient is 0.139488. This positive correlation suggests a moderate positive relationship between the benefit per order and sales per customer.
+
+Second Class:
+The correlation coefficient for Second Class shipping mode is 0.117577. This positive correlation indicates a positive relationship, but it is weaker compared to First Class and Same Day.
+
+Standard Class:
+The correlation coefficient for Standard Class shipping mode is 0.131890. Like Same Day, there is a moderate positive relationship between benefit per order and sales per customer.
+
+In summary, all shipping modes show positive correlations, indicating that as sales per customer increase, the benefit per order also tends to increase. However, the strength of the correlation varies, with First Class having the strongest positive correlation.
+
+
+6.	Done Tukey's Honest Significant Difference (HSD) test:
+
+
+      Multiple Comparison of Means - Tukey HSD, FWER=0.05       
+=================================================================
+   group1        group2     meandiff p-adj   lower  upper  reject
+-----------------------------------------------------------------
+ First Class       Same Day   -2.272 0.2511 -5.4312 0.8871  False
+ First Class   Second Class  -1.8163 0.1322 -3.9685 0.3358  False
+ First Class Standard Class  -1.1231 0.3792 -2.9275 0.6813  False
+    Same Day   Second Class   0.4557 0.9812 -2.6162 3.5276  False
+    Same Day Standard Class    1.149 0.7261 -1.6901 3.9881  False
+Second Class Standard Class   0.6933 0.7009 -0.9535 2.3401  False
+-----------------------------------------------------------------
+ 
+
+Interpreting the Tukey HSD results:
+
+The results of the Tukey HSD test are presented in the table, and it appears that none of the pairwise differences in means between the shipping modes are statistically significant. The "reject" column indicates whether the null hypothesis of equal means is rejected. Since all entries in the "reject" column are marked as "False," it suggests that there is no significant difference between the means of "Benefit per order" for any pair of shipping modes
 
  
